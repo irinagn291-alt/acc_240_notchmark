@@ -181,7 +181,65 @@ workflows:
               gem install fastlane --no-document
             fi
 
-            fastlane deliver --verbose
+            # Goldnock log 87165e8d: first upload 6 files → 6s later verifier
+            # treats UPLOAD_COMPLETE as missing → uploads the same 6 again
+            # (COMPLETE 6 + UPLOAD_COMPLETE 6). Then submit. fastlane#30094.
+            # Do not submit until the retry batch is COMPLETE and extras are gone.
+            fastlane deliver --verbose --submit_for_review false --run_precheck_before_submit false
+
+            echo "waiting 50s for ASC to finish ingesting the verifier retry"
+            sleep 50
+
+            ruby <<'RUBY'
+            require "base64"
+            require "spaceship"
+
+            token = Spaceship::ConnectAPI::Token.create(
+              key_id: ENV.fetch("ASC_KEY_ID"),
+              issuer_id: ENV.fetch("ASC_ISSUER_ID"),
+              key: Base64.decode64(ENV.fetch("ASC_API_KEY_CONTENT")),
+            )
+            Spaceship::ConnectAPI.token = token
+            app = Spaceship::ConnectAPI::App.find(ENV.fetch("APP_BUNDLE_ID"))
+            abort "ASC app not found" unless app
+            version = app.get_edit_app_store_version
+            abort "no editable App Store version" unless version
+
+            locs = Spaceship::ConnectAPI.get_app_store_version_localizations(
+              app_store_version_id: version.id
+            )
+            dropped = 0
+            seen_total = 0
+            Array(locs).each do |loc|
+              sets = Spaceship::ConnectAPI.get_app_screenshot_sets(
+                app_store_version_localization_id: loc.id
+              )
+              Array(sets).each do |set|
+                shots = Spaceship::ConnectAPI.get_app_screenshots(
+                  app_screenshot_set_id: set.id
+                )
+                seen = {}
+                Array(shots).each do |shot|
+                  seen_total += 1
+                  checksum = shot.source_file_checksum.to_s.strip
+                  key = checksum.empty? ? "id:#{shot.id}" : checksum
+                  if seen[key]
+                    puts "drop duplicate #{shot.id} checksum=#{checksum[0, 12]}"
+                    Spaceship::ConnectAPI.delete_app_screenshot(app_screenshot_id: shot.id)
+                    dropped += 1
+                  else
+                    seen[key] = true
+                  end
+                end
+              end
+            end
+            puts "screenshot dedupe: saw #{seen_total}, dropped #{dropped}"
+            if seen_total.zero?
+              abort "screenshot dedupe saw 0 shots — refusing to submit"
+            end
+            RUBY
+
+            fastlane deliver --verbose --skip_screenshots true --submit_for_review true --run_precheck_before_submit false
     - deploy-to-bitrise-io@2: {}
 meta:
   bitrise.io:
