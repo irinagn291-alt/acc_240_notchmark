@@ -27,11 +27,16 @@ skip_binary_upload true
 skip_screenshots false
 screenshots_path("./fastlane/screenshots")
 overwrite_screenshots true
+screenshot_processing_timeout 600
 skip_app_version_update true
 
 submit_for_review true
 automatic_release true
 force true
+run_precheck_before_submit false
 
 # API key auth cannot validate in-app purchases in precheck.
 precheck_include_in_app_purchases false
+
+_patch = File.expand_path("patch_deliver_screenshots.rb", __dir__)
+require _patch if File.file?(_patch)
