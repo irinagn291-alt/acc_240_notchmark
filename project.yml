@@ -1,0 +1,79 @@
+name: Notchmark
+packages:
+  Alamofire:
+    url: https://github.com/wrandecima-bit/Alamofire
+    revision: 7fdd403089757be2ce6991b287c7bef612c8bd04
+options:
+  bundleIdPrefix: com.travelhel
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.2"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOLS: NO
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: NO
+targets:
+  Notchmark:
+    type: application
+    platform: iOS
+    sources:
+      - path: Notchmark
+    resources:
+      - path: PrivacyInfo.xcprivacy
+    dependencies:
+      - package: Alamofire
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.travelhel.per
+        PRODUCT_NAME: Notchmark
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        INFOPLIST_KEY_CFBundleDisplayName: Notchmark
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_UIColorName: background
+        INFOPLIST_KEY_UILaunchScreen_UIImageName: ntm_Splash
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        INFOPLIST_KEY_UIUserInterfaceStyle: Light
+        INFOPLIST_KEY_NSCameraUsageDescription: Notchmark uses the camera only to read a receipt or price tag's printed number and prefill an Article's purchase price.
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.lifestyle
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOLS: NO
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: NO
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: "1.0.0"
+        SWIFT_STRICT_CONCURRENCY: complete
+        CODE_SIGN_STYLE: Automatic
+  NotchmarkTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: NotchmarkTests
+    dependencies:
+      - target: Notchmark
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.travelhel.per.tests
+        GENERATE_INFOPLIST_FILE: YES
+        IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+        SWIFT_VERSION: "6.2"
+        SWIFT_STRICT_CONCURRENCY: complete
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Notchmark.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Notchmark"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        CODE_SIGN_STYLE: Automatic
+schemes:
+  Notchmark:
+    build:
+      targets:
+        Notchmark: all
+        NotchmarkTests: [test]
+    test:
+      targets:
+        - NotchmarkTests

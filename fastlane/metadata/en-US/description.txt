@@ -1,0 +1,12 @@
+Notchmark is a personal ledger for durable goods you own. Add an Article with its purchase price, then tap Notch to carve one share off the remaining balance.
+
+• Add Article: name, purchase price, disposal value, and a share method of Price ÷ target uses or Manual share
+• Scan a price tag to read a printed number from a receipt or tag and prefill purchase price
+• The library rail lists each Article with its Amortizing or Profit phase, remaining balance, cost per use, and Grade
+• Tap Notch on a row to log a use; expand the row for timestamped notch history
+• When the balance reaches zero the Article writes a Breakeven Mark (notch index and date) and flips to Profit
+• Notch-to-breakeven ledger: Amortizing Articles never rank on Ledger until they write a Mark
+• Ledger shows Profit per notch for Marked Articles, Forecast to Mark for still-Amortizing Articles, and Library grades (A+ through F, relative to this library)
+• Settings: currency (USD, EUR, GBP), default share method, CSV export of an Article's notch history, Contact us, Re-run onboarding, and Reset all data
+
+Articles stay on this device. There is no account and no cloud sync.

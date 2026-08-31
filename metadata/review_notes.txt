@@ -1,0 +1,13 @@
+The only permission usage-description in the build settings is NSCameraUsageDescription: Notchmark uses the camera only to read a receipt or price tag's printed number and prefill an Article's purchase price. The system camera prompt appears the first time the reviewer opens Scan a price tag from Add Article. If access is denied, that screen shows Camera access is off and offers Open Settings. No photo library, microphone, location, or tracking usage strings are present.
+
+There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+
+Notchmark is a lifestyle ledger for people who own durable goods and want a cost-per-use figure. Each Notch subtracts one share from an Article's purchase price until a Breakeven Mark is written and the row moves from Amortizing to Profit.
+
+From a cold launch the reviewer sees a brief splash, then onboarding (What you own, One verb: Notch, Write the Mark, Ledger defaults) or the library if onboarding was already finished. Skip or Start notching writes defaults and opens the library. No credentials or demo account are needed. Tap Add Article, enter a Name and Purchase price, optionally set Price ÷ target uses or Manual share and a Disposal value, then Open Article. Tap Notch on the row to log a use and expand the row for notch history. Tap Ledger to see Profit per notch, Forecast to Mark, and Library grades. Tap Settings for currency, Export notch history, Contact us, Re-run onboarding, and Reset all data.
+
+On launch the app may contact travelhel-per.pro. The Settings Contact us link opens https://travelhel-per.pro/contact-us. Camera frames are processed on device by VisionKit DataScannerViewController and are not uploaded. Each Article is stored as a JSON document under Application Support, with Settings.json beside that folder. CSV export writes a local file and presents the system share sheet. There is no cloud sync of Articles.
+
+The native ledger does not change by App Store region. The reviewer chooses USD, EUR, or GBP. Amounts and dates follow the device locale. Scan a price tag recognizes English (en-US) printed text.
+
+No licence or regulated-industry paperwork applies. The app is a personal cost-per-use ledger, not a payment service and not financial or medical advice, and it declares no non-exempt encryption.

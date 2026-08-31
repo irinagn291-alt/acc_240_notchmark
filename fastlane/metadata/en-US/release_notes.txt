@@ -1,0 +1,12 @@
+Version 1.0 is the first release of Notchmark.
+
+• Library rail of Articles with Amortizing and Profit phases
+• Notch logs a use and carves one share from the balance bar
+• A Breakeven Mark is written when the balance reaches zero
+• Ledger ranks Marked Articles by Profit per notch
+• Forecast to Mark for still-Amortizing Articles
+• Library grades A+ through F, relative to this library
+• Add Article with Price ÷ target uses or Manual share
+• Scan a price tag to prefill purchase price
+• Settings for USD, EUR or GBP, CSV export of notch history, Contact us, Re-run onboarding, and Reset all data
+• On-device storage only

@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A44A3A7E87429771E7C8AB4 /* LedgerPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8DE1138DE5EA096CA6E82A /* LedgerPalette.swift */; };
+		0F530458C948F4AE003A6B6A /* RailReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B0D208E0BB67988FDD081 /* RailReviewTests.swift */; };
+		104CE375DDE4E718E04F665E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D3974D2C909C67C13EFA1D /* ContentView.swift */; };
+		10845D4CC1CA11613F94B145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E79A7AF55C46C82CE7C81 /* AppDelegate.swift */; };
+		135D2D044C1DE825DDF91BF5 /* PriceScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D302AF3F55771FB4DC1CD1C4 /* PriceScannerView.swift */; };
+		2027D9BA3576178341C91984 /* NotchmarkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4709E2A768AFDFA1B91C68C /* NotchmarkClient.swift */; };
+		207AB4BDB64E30E89B459A4B /* NotchRailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B77DA24179A611D7AE9B4 /* NotchRailView.swift */; };
+		2998D6931AB350F7DFED2EAC /* LibraryGrading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4582C278B876ED137C3A6D /* LibraryGrading.swift */; };
+		2A5A56940D67612CFD4DE36F /* NotchmarkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB7A5604C0D5B1DC20D830 /* NotchmarkClientTests.swift */; };
+		2EABE00E7DDCA789D050466D /* ShareMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E903AE0D024A4DDB6FCF2FE /* ShareMethod.swift */; };
+		31B4930885C1BE5631E77F6F /* LibraryGradingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39EF97E4DDD3DA0204E972 /* LibraryGradingTests.swift */; };
+		3E6366D74FD66F7F49EC4A5D /* PriceTagParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9D7BA0CA3D4AB4A6E58D0 /* PriceTagParser.swift */; };
+		4926E7981982EE90091A6F58 /* CurrencyFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1947F45B3E80407BB348F9D4 /* CurrencyFormatting.swift */; };
+		503B12500379A1D8617CEE3E /* BreakevenMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A141D9B9AD56B752107CE8 /* BreakevenMark.swift */; };
+		584D8CA577E10FE6E0DD2DDD /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5633B1B33828D0DC034A5E2F /* BoardView.swift */; };
+		65D98A17D1B145FC216CA0DC /* ArticleStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA3F43CB7A7A3F99917E70 /* ArticleStoreTests.swift */; };
+		660B3348C39F0689A5289D32 /* RailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453CE67D6368FA62D0EE9C2 /* RailView.swift */; };
+		7B37B1E5CDDCD2D86A95FAB8 /* RailSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211CCBA964142CF93F0387 /* RailSession.swift */; };
+		7BCC66F0F035264A830C5939 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9222F6680E24BA1AA5160586 /* ListView.swift */; };
+		7C07D4C997467B486566A1B8 /* LedgerChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4032BA7E325CFD7E1CC22D /* LedgerChrome.swift */; };
+		87DED342379595E60EFF6612 /* AmortizationLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E0484F9F11730A22704E05 /* AmortizationLedger.swift */; };
+		890CAC414CB5C4C8BB1CD66F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9796F2B2D5633D54F33BDC06 /* OnboardingView.swift */; };
+		932A701C99EFFA9E9A96F043 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938467D7847EE84FDA8E271 /* Article.swift */; };
+		93D8EBC67DF2B8D063112B1A /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72512FF10D0BAE8C1A2CF9D /* APIConfig.swift */; };
+		9413C9636F855EB6DB7615C1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD06BC304295CCAB900550E /* SettingsView.swift */; };
+		9AEFD81FE60C6EA81AA0E0EE /* LedgerTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C89FA77D2A1AE18616B3E /* LedgerTypography.swift */; };
+		9D6C568056FB4007FB8334E2 /* NotchRailRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC10776EC412A5E46418A01 /* NotchRailRepresentable.swift */; };
+		AEC66485B98463B67323524D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E51D7BB2470F0093578C21 /* Assets.xcassets */; };
+		B295A90334D4A3C0C6C5B7E1 /* MarkForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A41D60CDD2B9D08C79470E /* MarkForecast.swift */; };
+		B2D75DCDBC3076981FF9A40F /* ProfitPerNotchRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632A418A1594FE907224641 /* ProfitPerNotchRanking.swift */; };
+		B4C4EEFC5918A478B8C94CC6 /* ArticleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14440F1CADB854F09EEBCFC /* ArticleStore.swift */; };
+		B642C60CB1793941F94ABD51 /* MarkLedgerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BFA5F5B7DE5E2A013F779 /* MarkLedgerView.swift */; };
+		BD81FB175204C908179CB6D0 /* ArticleDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D8C2F67CF9799FC80F387 /* ArticleDocument.swift */; };
+		C0B9C7E799BC9991325646CD /* AddArticleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09954CE4CDE842DC6ACDFA /* AddArticleSheet.swift */; };
+		C16207C4AA2209DF16A22D44 /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13278172750D67E6CF587978 /* CSVExporter.swift */; };
+		C2565CC618C67DC2937730F3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A99BEC95587A1165537CC07D /* Alamofire */; };
+		C39339F7E5C51ECC3884EF44 /* RailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B69160A42E0C50A69C4FC /* RailRowView.swift */; };
+		C454A43F2946AE512044B540 /* AmortizationLedgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD82F38BF74EC0047CA63C /* AmortizationLedgerTests.swift */; };
+		C77FC4E4D3741240FF97A009 /* DayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB35EC1FFAE076A88A1574B /* DayKey.swift */; };
+		CA2E80838C0F4192B93D991E /* NotchmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC3B4F3D71E8FF7F394CDE4 /* NotchmarkTests.swift */; };
+		CAB8BECC264B8B36BBBA4339 /* NotchEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8492C48FA117970DF71F1 /* NotchEntry.swift */; };
+		E68F07A9438EFA532DDA6BF2 /* RailReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D284141DD40FBA4E4253F /* RailReview.swift */; };
+		E84D0AD6F508E8461E38230B /* NotchmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9739CEE1456B99276F634728 /* NotchmarkApp.swift */; };
+		F0F4D84E1D3CCAFE5E61226F /* ForecastStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703B5DBDFC822EAB4374C6B /* ForecastStrip.swift */; };
+		F59807D515833671CA0D347C /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C9E578B24645567712BFB5 /* InsightsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F82451A4708409FB847F0915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516ABC5C0CE6D3FF9DDB3F93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F6F043C1452F0CEAF5AF54;
+			remoteInfo = Notchmark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		054B0D208E0BB67988FDD081 /* RailReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailReviewTests.swift; sourceTree = "<group>"; };
+		08E51D7BB2470F0093578C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CB35EC1FFAE076A88A1574B /* DayKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayKey.swift; sourceTree = "<group>"; };
+		0EDA3F43CB7A7A3F99917E70 /* ArticleStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleStoreTests.swift; sourceTree = "<group>"; };
+		13278172750D67E6CF587978 /* CSVExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
+		16C9E578B24645567712BFB5 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		1947F45B3E80407BB348F9D4 /* CurrencyFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatting.swift; sourceTree = "<group>"; };
+		1EBB7A5604C0D5B1DC20D830 /* NotchmarkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchmarkClientTests.swift; sourceTree = "<group>"; };
+		219B77DA24179A611D7AE9B4 /* NotchRailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchRailView.swift; sourceTree = "<group>"; };
+		245C89FA77D2A1AE18616B3E /* LedgerTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerTypography.swift; sourceTree = "<group>"; };
+		2632A418A1594FE907224641 /* ProfitPerNotchRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitPerNotchRanking.swift; sourceTree = "<group>"; };
+		2938467D7847EE84FDA8E271 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		2FA347C10EF6F1C2C69D02CF /* NotchmarkTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NotchmarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		346D8C2F67CF9799FC80F387 /* ArticleDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDocument.swift; sourceTree = "<group>"; };
+		3AD06BC304295CCAB900550E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3D4582C278B876ED137C3A6D /* LibraryGrading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryGrading.swift; sourceTree = "<group>"; };
+		3E903AE0D024A4DDB6FCF2FE /* ShareMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareMethod.swift; sourceTree = "<group>"; };
+		426B69160A42E0C50A69C4FC /* RailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailRowView.swift; sourceTree = "<group>"; };
+		549BFA5F5B7DE5E2A013F779 /* MarkLedgerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkLedgerView.swift; sourceTree = "<group>"; };
+		5633B1B33828D0DC034A5E2F /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		5D4032BA7E325CFD7E1CC22D /* LedgerChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerChrome.swift; sourceTree = "<group>"; };
+		5D8DE1138DE5EA096CA6E82A /* LedgerPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerPalette.swift; sourceTree = "<group>"; };
+		5FC10776EC412A5E46418A01 /* NotchRailRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchRailRepresentable.swift; sourceTree = "<group>"; };
+		73A141D9B9AD56B752107CE8 /* BreakevenMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakevenMark.swift; sourceTree = "<group>"; };
+		787E79A7AF55C46C82CE7C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DCD82F38BF74EC0047CA63C /* AmortizationLedgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationLedgerTests.swift; sourceTree = "<group>"; };
+		9222F6680E24BA1AA5160586 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		94AC7CC9C41A133A5E21F17A /* Notchmark.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Notchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9703B5DBDFC822EAB4374C6B /* ForecastStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastStrip.swift; sourceTree = "<group>"; };
+		9739CEE1456B99276F634728 /* NotchmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchmarkApp.swift; sourceTree = "<group>"; };
+		9796F2B2D5633D54F33BDC06 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A1D3974D2C909C67C13EFA1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7211CCBA964142CF93F0387 /* RailSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailSession.swift; sourceTree = "<group>"; };
+		B72512FF10D0BAE8C1A2CF9D /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		BBE9D7BA0CA3D4AB4A6E58D0 /* PriceTagParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTagParser.swift; sourceTree = "<group>"; };
+		D302AF3F55771FB4DC1CD1C4 /* PriceScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceScannerView.swift; sourceTree = "<group>"; };
+		D453CE67D6368FA62D0EE9C2 /* RailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailView.swift; sourceTree = "<group>"; };
+		DA39EF97E4DDD3DA0204E972 /* LibraryGradingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryGradingTests.swift; sourceTree = "<group>"; };
+		E5A41D60CDD2B9D08C79470E /* MarkForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkForecast.swift; sourceTree = "<group>"; };
+		E5A8492C48FA117970DF71F1 /* NotchEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchEntry.swift; sourceTree = "<group>"; };
+		E7E0484F9F11730A22704E05 /* AmortizationLedger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationLedger.swift; sourceTree = "<group>"; };
+		EA0D284141DD40FBA4E4253F /* RailReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailReview.swift; sourceTree = "<group>"; };
+		ECC3B4F3D71E8FF7F394CDE4 /* NotchmarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchmarkTests.swift; sourceTree = "<group>"; };
+		ED09954CE4CDE842DC6ACDFA /* AddArticleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleSheet.swift; sourceTree = "<group>"; };
+		F14440F1CADB854F09EEBCFC /* ArticleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleStore.swift; sourceTree = "<group>"; };
+		F4709E2A768AFDFA1B91C68C /* NotchmarkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchmarkClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C4602B4BA1AE060213E7278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2565CC618C67DC2937730F3 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A00D9604BCA194E01E45EA9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				13278172750D67E6CF587978 /* CSVExporter.swift */,
+				3AD06BC304295CCAB900550E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		556EC1C7038DFA8406E94018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94AC7CC9C41A133A5E21F17A /* Notchmark.app */,
+				2FA347C10EF6F1C2C69D02CF /* NotchmarkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B1721C18C24A1EBA4D91684 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				2938467D7847EE84FDA8E271 /* Article.swift */,
+				346D8C2F67CF9799FC80F387 /* ArticleDocument.swift */,
+				F14440F1CADB854F09EEBCFC /* ArticleStore.swift */,
+				3D4582C278B876ED137C3A6D /* LibraryGrading.swift */,
+				3E903AE0D024A4DDB6FCF2FE /* ShareMethod.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		8CC1653B7A2F6B24D8AD6F2D /* Rail */ = {
+			isa = PBXGroup;
+			children = (
+				ED09954CE4CDE842DC6ACDFA /* AddArticleSheet.swift */,
+				9222F6680E24BA1AA5160586 /* ListView.swift */,
+				5FC10776EC412A5E46418A01 /* NotchRailRepresentable.swift */,
+				219B77DA24179A611D7AE9B4 /* NotchRailView.swift */,
+				9796F2B2D5633D54F33BDC06 /* OnboardingView.swift */,
+				D302AF3F55771FB4DC1CD1C4 /* PriceScannerView.swift */,
+				BBE9D7BA0CA3D4AB4A6E58D0 /* PriceTagParser.swift */,
+				EA0D284141DD40FBA4E4253F /* RailReview.swift */,
+				426B69160A42E0C50A69C4FC /* RailRowView.swift */,
+				B7211CCBA964142CF93F0387 /* RailSession.swift */,
+				D453CE67D6368FA62D0EE9C2 /* RailView.swift */,
+			);
+			path = Rail;
+			sourceTree = "<group>";
+		};
+		90E1B0C85930E5D75DC4006E /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				5633B1B33828D0DC034A5E2F /* BoardView.swift */,
+				9703B5DBDFC822EAB4374C6B /* ForecastStrip.swift */,
+				16C9E578B24645567712BFB5 /* InsightsView.swift */,
+				E5A41D60CDD2B9D08C79470E /* MarkForecast.swift */,
+				2632A418A1594FE907224641 /* ProfitPerNotchRanking.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		A3149B3AA1DE4CE3E6535FF9 = {
+			isa = PBXGroup;
+			children = (
+				FDC7363EB14104607F4B83D1 /* Notchmark */,
+				D7EF82DBACA1DBD92EADC299 /* NotchmarkTests */,
+				556EC1C7038DFA8406E94018 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A99199B416FA0477E5A5D91F /* Notch */ = {
+			isa = PBXGroup;
+			children = (
+				E5A8492C48FA117970DF71F1 /* NotchEntry.swift */,
+			);
+			path = Notch;
+			sourceTree = "<group>";
+		};
+		CB768B449E0A43D82185E4CD /* Mark */ = {
+			isa = PBXGroup;
+			children = (
+				E7E0484F9F11730A22704E05 /* AmortizationLedger.swift */,
+				73A141D9B9AD56B752107CE8 /* BreakevenMark.swift */,
+				549BFA5F5B7DE5E2A013F779 /* MarkLedgerView.swift */,
+			);
+			path = Mark;
+			sourceTree = "<group>";
+		};
+		D2D411AC3E55729CE795800E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1947F45B3E80407BB348F9D4 /* CurrencyFormatting.swift */,
+				0CB35EC1FFAE076A88A1574B /* DayKey.swift */,
+				5D4032BA7E325CFD7E1CC22D /* LedgerChrome.swift */,
+				5D8DE1138DE5EA096CA6E82A /* LedgerPalette.swift */,
+				245C89FA77D2A1AE18616B3E /* LedgerTypography.swift */,
+				F4709E2A768AFDFA1B91C68C /* NotchmarkClient.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D7EF82DBACA1DBD92EADC299 /* NotchmarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DCD82F38BF74EC0047CA63C /* AmortizationLedgerTests.swift */,
+				0EDA3F43CB7A7A3F99917E70 /* ArticleStoreTests.swift */,
+				DA39EF97E4DDD3DA0204E972 /* LibraryGradingTests.swift */,
+				1EBB7A5604C0D5B1DC20D830 /* NotchmarkClientTests.swift */,
+				ECC3B4F3D71E8FF7F394CDE4 /* NotchmarkTests.swift */,
+				054B0D208E0BB67988FDD081 /* RailReviewTests.swift */,
+			);
+			path = NotchmarkTests;
+			sourceTree = "<group>";
+		};
+		FDC7363EB14104607F4B83D1 /* Notchmark */ = {
+			isa = PBXGroup;
+			children = (
+				B72512FF10D0BAE8C1A2CF9D /* APIConfig.swift */,
+				787E79A7AF55C46C82CE7C81 /* AppDelegate.swift */,
+				08E51D7BB2470F0093578C21 /* Assets.xcassets */,
+				A1D3974D2C909C67C13EFA1D /* ContentView.swift */,
+				9739CEE1456B99276F634728 /* NotchmarkApp.swift */,
+				6B1721C18C24A1EBA4D91684 /* Article */,
+				90E1B0C85930E5D75DC4006E /* Board */,
+				CB768B449E0A43D82185E4CD /* Mark */,
+				A99199B416FA0477E5A5D91F /* Notch */,
+				8CC1653B7A2F6B24D8AD6F2D /* Rail */,
+				1A00D9604BCA194E01E45EA9 /* Settings */,
+				D2D411AC3E55729CE795800E /* Support */,
+			);
+			path = Notchmark;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F6F043C1452F0CEAF5AF54 /* Notchmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF39EF484DF55408FCB0370 /* Build configuration list for PBXNativeTarget "Notchmark" */;
+			buildPhases = (
+				04DD99F7F6AE03CC6C38ABCF /* Sources */,
+				94969416D15875C2E5BD30DB /* Resources */,
+				8C4602B4BA1AE060213E7278 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notchmark;
+			packageProductDependencies = (
+				A99BEC95587A1165537CC07D /* Alamofire */,
+			);
+			productName = Notchmark;
+			productReference = 94AC7CC9C41A133A5E21F17A /* Notchmark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A34514A64751A90BD9ADF25C /* NotchmarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0086079D6D135E1A13578821 /* Build configuration list for PBXNativeTarget "NotchmarkTests" */;
+			buildPhases = (
+				FD1BF9DA18AC746F29588721 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9834F17045A0194CA82B7039 /* PBXTargetDependency */,
+			);
+			name = NotchmarkTests;
+			packageProductDependencies = (
+			);
+			productName = NotchmarkTests;
+			productReference = 2FA347C10EF6F1C2C69D02CF /* NotchmarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		516ABC5C0CE6D3FF9DDB3F93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					18F6F043C1452F0CEAF5AF54 = {
+						ProvisioningStyle = Automatic;
+					};
+					A34514A64751A90BD9ADF25C = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1FA186BC16009D1F3FC8AB98 /* Build configuration list for PBXProject "Notchmark" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A3149B3AA1DE4CE3E6535FF9;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D3DDCEC450E34A04FBD17A1D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 556EC1C7038DFA8406E94018 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F6F043C1452F0CEAF5AF54 /* Notchmark */,
+				A34514A64751A90BD9ADF25C /* NotchmarkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94969416D15875C2E5BD30DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC66485B98463B67323524D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04DD99F7F6AE03CC6C38ABCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D8EBC67DF2B8D063112B1A /* APIConfig.swift in Sources */,
+				C0B9C7E799BC9991325646CD /* AddArticleSheet.swift in Sources */,
+				87DED342379595E60EFF6612 /* AmortizationLedger.swift in Sources */,
+				10845D4CC1CA11613F94B145 /* AppDelegate.swift in Sources */,
+				932A701C99EFFA9E9A96F043 /* Article.swift in Sources */,
+				BD81FB175204C908179CB6D0 /* ArticleDocument.swift in Sources */,
+				B4C4EEFC5918A478B8C94CC6 /* ArticleStore.swift in Sources */,
+				584D8CA577E10FE6E0DD2DDD /* BoardView.swift in Sources */,
+				503B12500379A1D8617CEE3E /* BreakevenMark.swift in Sources */,
+				C16207C4AA2209DF16A22D44 /* CSVExporter.swift in Sources */,
+				104CE375DDE4E718E04F665E /* ContentView.swift in Sources */,
+				4926E7981982EE90091A6F58 /* CurrencyFormatting.swift in Sources */,
+				C77FC4E4D3741240FF97A009 /* DayKey.swift in Sources */,
+				F0F4D84E1D3CCAFE5E61226F /* ForecastStrip.swift in Sources */,
+				F59807D515833671CA0D347C /* InsightsView.swift in Sources */,
+				7C07D4C997467B486566A1B8 /* LedgerChrome.swift in Sources */,
+				0A44A3A7E87429771E7C8AB4 /* LedgerPalette.swift in Sources */,
+				9AEFD81FE60C6EA81AA0E0EE /* LedgerTypography.swift in Sources */,
+				2998D6931AB350F7DFED2EAC /* LibraryGrading.swift in Sources */,
+				7BCC66F0F035264A830C5939 /* ListView.swift in Sources */,
+				B295A90334D4A3C0C6C5B7E1 /* MarkForecast.swift in Sources */,
+				B642C60CB1793941F94ABD51 /* MarkLedgerView.swift in Sources */,
+				CAB8BECC264B8B36BBBA4339 /* NotchEntry.swift in Sources */,
+				9D6C568056FB4007FB8334E2 /* NotchRailRepresentable.swift in Sources */,
+				207AB4BDB64E30E89B459A4B /* NotchRailView.swift in Sources */,
+				E84D0AD6F508E8461E38230B /* NotchmarkApp.swift in Sources */,
+				2027D9BA3576178341C91984 /* NotchmarkClient.swift in Sources */,
+				890CAC414CB5C4C8BB1CD66F /* OnboardingView.swift in Sources */,
+				135D2D044C1DE825DDF91BF5 /* PriceScannerView.swift in Sources */,
+				3E6366D74FD66F7F49EC4A5D /* PriceTagParser.swift in Sources */,
+				B2D75DCDBC3076981FF9A40F /* ProfitPerNotchRanking.swift in Sources */,
+				E68F07A9438EFA532DDA6BF2 /* RailReview.swift in Sources */,
+				C39339F7E5C51ECC3884EF44 /* RailRowView.swift in Sources */,
+				7B37B1E5CDDCD2D86A95FAB8 /* RailSession.swift in Sources */,
+				660B3348C39F0689A5289D32 /* RailView.swift in Sources */,
+				9413C9636F855EB6DB7615C1 /* SettingsView.swift in Sources */,
+				2EABE00E7DDCA789D050466D /* ShareMethod.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1BF9DA18AC746F29588721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C454A43F2946AE512044B540 /* AmortizationLedgerTests.swift in Sources */,
+				65D98A17D1B145FC216CA0DC /* ArticleStoreTests.swift in Sources */,
+				31B4930885C1BE5631E77F6F /* LibraryGradingTests.swift in Sources */,
+				2A5A56940D67612CFD4DE36F /* NotchmarkClientTests.swift in Sources */,
+				CA2E80838C0F4192B93D991E /* NotchmarkTests.swift in Sources */,
+				0F530458C948F4AE003A6B6A /* RailReviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9834F17045A0194CA82B7039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F6F043C1452F0CEAF5AF54 /* Notchmark */;
+			targetProxy = F82451A4708409FB847F0915 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24A6484ADB366B91FD420B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOLS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		4810B41FC4499F297018E21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.travelhel.per.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notchmark.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Notchmark";
+			};
+			name = Release;
+		};
+		B62D6AACE38084B59405E547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.travelhel.per.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notchmark.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Notchmark";
+			};
+			name = Debug;
+		};
+		BDC6DF1B32DC642E1E7CEF52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOLS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+			};
+			name = Release;
+		};
+		CFFBEA557FF652ABD53D4C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOLS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Notchmark;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Notchmark uses the camera only to read a receipt or price tag's printed number and prefill an Article's purchase price.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_UIColorName = background;
+				INFOPLIST_KEY_UILaunchScreen_UIImageName = ntm_Splash;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travelhel.per;
+				PRODUCT_NAME = Notchmark;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBB0B661E64C28203A2E4FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOLS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Notchmark;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Notchmark uses the camera only to read a receipt or price tag's printed number and prefill an Article's purchase price.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_UIColorName = background;
+				INFOPLIST_KEY_UILaunchScreen_UIImageName = ntm_Splash;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travelhel.per;
+				PRODUCT_NAME = Notchmark;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0086079D6D135E1A13578821 /* Build configuration list for PBXNativeTarget "NotchmarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62D6AACE38084B59405E547 /* Debug */,
+				4810B41FC4499F297018E21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1FA186BC16009D1F3FC8AB98 /* Build configuration list for PBXProject "Notchmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A6484ADB366B91FD420B0D /* Debug */,
+				BDC6DF1B32DC642E1E7CEF52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9AF39EF484DF55408FCB0370 /* Build configuration list for PBXNativeTarget "Notchmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFFBEA557FF652ABD53D4C25 /* Debug */,
+				EBB0B661E64C28203A2E4FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3DDCEC450E34A04FBD17A1D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
+			requirement = {
+				kind = revision;
+				revision = 7fdd403089757be2ce6991b287c7bef612c8bd04;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A99BEC95587A1165537CC07D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3DDCEC450E34A04FBD17A1D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 516ABC5C0CE6D3FF9DDB3F93 /* Project object */;
+}
