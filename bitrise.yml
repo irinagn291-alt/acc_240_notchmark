@@ -215,9 +215,12 @@ workflows:
                 app_store_version_localization_id: loc.id
               )
               Array(sets).each do |set|
-                shots = Spaceship::ConnectAPI.get_app_screenshots(
-                  app_screenshot_set_id: set.id
+                loaded = Spaceship::ConnectAPI.get_app_screenshot_set(
+                  app_screenshot_set_id: set.id,
+                  includes: "appScreenshots"
                 )
+                loaded = loaded.first if loaded.respond_to?(:first) && !loaded.respond_to?(:app_screenshots)
+                shots = loaded.respond_to?(:app_screenshots) ? loaded.app_screenshots : []
                 seen = {}
                 Array(shots).each do |shot|
                   seen_total += 1
