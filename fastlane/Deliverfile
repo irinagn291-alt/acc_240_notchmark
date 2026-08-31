@@ -24,7 +24,9 @@ submission_information({
 
 # The binary is uploaded by the archive workflow, so deliver only carries the metadata.
 skip_binary_upload true
-skip_screenshots true
+skip_screenshots false
+screenshots_path("./fastlane/screenshots")
+overwrite_screenshots true
 skip_app_version_update true
 
 submit_for_review true
